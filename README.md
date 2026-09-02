@@ -2,7 +2,7 @@
 
 A data cleaning and analysis project built in Databricks, using pandas for data preparation and Spark SQL for aggregation and querying. The project takes a raw student performance dataset, cleans it, engineers new features, and surfaces insights about academic performance and attendance risk.
 
-> **Note:** This notebook was built and run in Databricks. Cells prefixed with `%sql` and the `spark.createDataFrame()` call rely on a Databricks Spark session and will not execute standalone in a plain Jupyter/local environment.
+> **Note:** This notebook was built and run in Databricks. The `%sql` cells and the `spark.createDataFrame()` call rely on Databricks' built-in environment and will not execute standalone in a plain Jupyter/local environment.
 
 ## What it does
 
@@ -15,7 +15,7 @@ A data cleaning and analysis project built in Databricks, using pandas for data 
   - **`score`** — an average of math, English, and science scores
   - **`result`** — `Pass`/`Fail` based on a 50-point threshold
   - **`attendance_category`** — classifies students as `High Attendance`, `Low Attendance`, or `At Risk` based on attendance rate
-- Registers the cleaned DataFrame as a Spark SQL temp view (`school_performance_updated`)
+- Registers the cleaned data as a temp view (`school_performance_updated`) so it can be queried with SQL
 - Runs SQL queries to answer questions like:
   - How many students fall into each attendance category?
   - What's the average score per grade?
@@ -24,10 +24,9 @@ A data cleaning and analysis project built in Databricks, using pandas for data 
 
 ## Tools & tech
 
-- **Databricks** (notebook environment, Spark runtime)
-- **PySpark / Spark SQL** — DataFrame-to-SQL view registration and aggregation queries
-- **pandas** — data cleaning, feature engineering
-- **Python** (`.apply()`, boolean filtering, custom functions)
+- **Databricks** (notebook environment)
+- **Python & pandas** — data cleaning, feature engineering (`.apply()`, boolean filtering, custom functions)
+- **SQL** — querying the cleaned data using Databricks' built-in SQL support (`%sql` cells) to run aggregations directly on the dataset
 
 ## Key insights surfaced
 
@@ -40,6 +39,11 @@ A data cleaning and analysis project built in Databricks, using pandas for data 
 ```
 student-performance-analysis/
 ├── Students.ipynb
+├── school_student_performance.csv
 └── README.md
 ```
 
+## Author
+
+Musa  [LinkedIn](www.linkedin.com/in/musawenkosi-mhlambi-04b5ba310)
+*(part of ongoing data engineering coursework at Witle Academy)*
