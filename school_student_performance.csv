@@ -1,0 +1,16 @@
+student_id,student_name,grade,class_group,gender,math_score,english_score,science_score,attendance_rate,city
+1001,Amina,10,10A,Female,78,82.0,74,0.92,Johannesburg
+1002,Thabo,10,10B,Male,64,70.0,68,0.85,Pretoria
+1003,Lerato,11,11A,Female,88,91.0,86,0.96,Soweto
+1004,John,11,11B,Male,55,60.0,58,0.78,Durban
+1005,Zanele,12,12A,Female,92,89.0,94,0.98,Cape Town
+1006,Neo,12,12B,Male,47,54.0,50,0.69,Johannesburg
+1007,Fatima,10,10A,Female,81,84.0,79,0.9,
+1008,Sipho,11,11A,Male,72,67.0,70,,Pretoria
+1009,Karabo,12,12A,Female,69,73.0,71,0.88,Midrand
+1010,Musa,10,10B,Male,35,42.0,39,0.62,Soweto
+1011,Nandi,11,11B,Female,76,80.0,75,0.91,Johannesburg
+1012,Brian,12,12B,Male,59,,61,0.74,Cape Town
+1013,Palesa,10,10A,Female,84,86.0,88,0.95,Centurion
+1014,Daniel,11,11A,Male,66,63.0,65,0.82,
+1015,Ayanda,12,12A,Female,90,93.0,91,0.97,Pretoria
