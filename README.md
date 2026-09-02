@@ -12,9 +12,9 @@ A data cleaning and analysis project built in Databricks, using pandas for data 
   - Fills missing city values with `"Unknown"`
   - Fills missing score values with the column mean
 - Engineers new features:
-  - **`score`** — an average of math, English, and science scores
-  - **`result`** — `Pass`/`Fail` based on a 50-point threshold
-  - **`attendance_category`** — classifies students as `High Attendance`, `Low Attendance`, or `At Risk` based on attendance rate
+  - **`score`** : an average of math, English, and science scores
+  - **`result`** : `Pass`/`Fail` based on a 50-point threshold
+  - **`attendance_category`** : classifies students as `High Attendance`, `Low Attendance`, or `At Risk` based on attendance rate
 - Registers the cleaned data as a temp view (`school_performance_updated`) so it can be queried with SQL
 - Runs SQL queries to answer questions like:
   - How many students fall into each attendance category?
@@ -25,8 +25,8 @@ A data cleaning and analysis project built in Databricks, using pandas for data 
 ## Tools & tech
 
 - **Databricks** (notebook environment)
-- **Python & pandas** — data cleaning, feature engineering (`.apply()`, boolean filtering, custom functions)
-- **SQL** — querying the cleaned data using Databricks' built-in SQL support (`%sql` cells) to run aggregations directly on the dataset
+- **Python & pandas** - data cleaning, feature engineering (`.apply()`, boolean filtering, custom functions)
+- **SQL** - querying the cleaned data using Databricks' built-in SQL support (`%sql` cells) to run aggregations directly on the dataset
 
 ## Key insights surfaced
 
